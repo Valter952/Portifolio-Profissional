@@ -1,0 +1,96 @@
+.arcodeon{
+    display: flex;
+    flex-direction: column;
+    width:97%;
+    margin: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    transition: .25;
+
+}
+
+.arcodeon:hover{
+
+    background-color: #55569E;
+    border-color: #55569E;
+}
+
+
+
+.arcodeon .trigger:hover{
+
+    cursor: pointer;
+
+}
+
+
+
+
+.arcodeon .trigger{
+
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: white;
+    border:none;
+    
+}  
+
+.arcodeon .trigger h2{
+
+    margin:0;
+    font-size: 1.5rem;
+    text-align: start;
+
+
+
+}
+
+
+.arcodeon .trigger::after{
+
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image:url("/assets/img/icons/arrow.svg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .25s;
+    
+
+}
+
+
+.arcodeon.open .trigger::after{
+
+    transform: rotate(180deg);
+
+}
+
+.arcodeon .content{
+
+    overflow: hidden;
+    
+    height: 0;
+    opacity: 0;
+    transition:  opacity.25s ease-in-out ;
+}
+
+.arcodeon.open{
+
+    background-color: #55569E;
+    
+}
+.arcodeon.open .content{
+
+    display: block;
+    padding: 0 1rem 1rem 2rem;
+    height: auto;
+    opacity:1;
+}
