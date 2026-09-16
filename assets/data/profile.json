@@ -1,9 +1,9 @@
 {
   "name": "Valter Domingos de Souza",
-  "photo": "assets/img/Miguel.jpeg",
+  "photo": "https://raw.githubusercontent.com/Valter952/Portifolio-Profissional/refs/heads/main/assets/img/Miguel.jpeg",
   "job": "Developer Júnior",
   "location": "São Paulo - SP",
-  "phone": "(16) 9999-7656",
+  "phone": "(19) 98455-5577",
   "email": "dvalter06@gmail.com",
   "skills": {
     "hardSkills": [
