@@ -26,8 +26,16 @@ function updateProfileInfo(profileData) {
 }
 
 
+function  upadateSoftSkills(profileData) {
+    const softSkills = document.getElementById('profile.skills.softSkills');
+    softSkills.innerHTML = profileData.softSkills.map(skill => `<li>${skill}</li>`).join('');
+}
+
+
+
 (async () => {
     const profileData = await fetchProfileData();
     updateProfileInfo(profileData)
+    upadateSoftSkills(profileData)
     
 })();
