@@ -55,11 +55,18 @@ function updatePortfolio(profileData) {
     ).join('');
 }
 
-        
+function updateProfessionalExperience(profileData) {
+    const experience = document.getElementById('profile.professionalExperience');
+    experience.innerHTML = profileData.professionalExperience.map(job => `
+        <li>
+            <h3 class="title" id="profile.professionalExperience.name">${job.name}</h3>
+            <h3 class="period" id="profile.professionalExperience.period">${job.period}</h3>
+            <p id="profile.professionalExperience.description">${job.description}</p>
+            <a href="${job.url}" target="_blank">${job.url}</a>
+        </li>
+    `).join('');
+}
 
-                
-            
-        
         
         
         
@@ -75,5 +82,6 @@ function updatePortfolio(profileData) {
     updateHardSkills(profileData)
     updateLanguages(profileData)
     updatePortfolio(profileData)
+    upadateProfessionalExperience(profileData)
     
 })();
