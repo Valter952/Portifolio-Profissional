@@ -13,7 +13,7 @@
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background-image:url("assets/img/icons/trespontos.svg") ;
+    background-image:url("/assets/img/icons/trespontos.svg") ;
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: .5rem;
@@ -63,7 +63,7 @@
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    background-image:url("assets/img/icons/job.svg") ;
+    background-image:url("/assets/img/icons/job.svg") ;
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: .5rem;
@@ -98,7 +98,7 @@
 
 .information .phone::before{
 
-    background-image:url("assets/img/icons/phone.svg") ;
+    background-image:url("/assets/img/icons/phone.svg") ;
     
 }
 
